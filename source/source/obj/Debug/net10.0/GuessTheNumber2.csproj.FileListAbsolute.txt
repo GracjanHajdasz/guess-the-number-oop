@@ -1,0 +1,15 @@
+/home/beny/projects/guess-the-number-oop/source/bin/Debug/net10.0/GuessTheNumber2
+/home/beny/projects/guess-the-number-oop/source/bin/Debug/net10.0/GuessTheNumber2.deps.json
+/home/beny/projects/guess-the-number-oop/source/bin/Debug/net10.0/GuessTheNumber2.runtimeconfig.json
+/home/beny/projects/guess-the-number-oop/source/bin/Debug/net10.0/GuessTheNumber2.dll
+/home/beny/projects/guess-the-number-oop/source/bin/Debug/net10.0/GuessTheNumber2.pdb
+/home/beny/projects/guess-the-number-oop/source/obj/Debug/net10.0/GuessTheNumber2.GeneratedMSBuildEditorConfig.editorconfig
+/home/beny/projects/guess-the-number-oop/source/obj/Debug/net10.0/GuessTheNumber2.AssemblyInfoInputs.cache
+/home/beny/projects/guess-the-number-oop/source/obj/Debug/net10.0/GuessTheNumber2.AssemblyInfo.cs
+/home/beny/projects/guess-the-number-oop/source/obj/Debug/net10.0/GuessTheNumber2.csproj.CoreCompileInputs.cache
+/home/beny/projects/guess-the-number-oop/source/obj/Debug/net10.0/GuessTheNumber2.sourcelink.json
+/home/beny/projects/guess-the-number-oop/source/obj/Debug/net10.0/GuessTheNumber2.dll
+/home/beny/projects/guess-the-number-oop/source/obj/Debug/net10.0/refint/GuessTheNumber2.dll
+/home/beny/projects/guess-the-number-oop/source/obj/Debug/net10.0/GuessTheNumber2.pdb
+/home/beny/projects/guess-the-number-oop/source/obj/Debug/net10.0/GuessTheNumber2.genruntimeconfig.cache
+/home/beny/projects/guess-the-number-oop/source/obj/Debug/net10.0/ref/GuessTheNumber2.dll
