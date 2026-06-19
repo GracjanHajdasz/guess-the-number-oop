@@ -59,8 +59,8 @@ namespace GuessTheNumber2
             Random rand = new Random();
             int hiddenNumber = rand.Next(minNumber, maxNumber + 1);
 
-            // Change the hidden number every 6, 7 or 8 attempts.
-            int changeInterval = rand.Next(6, 9);
+            // Change the hidden number every 6 attempts.
+            int changeInterval = 6;
             int attemptNumber = 1;
             bool wasGuessed = false;
             DateTime start = DateTime.Now;
@@ -116,7 +116,6 @@ namespace GuessTheNumber2
                 if (!wasGuessed && attemptNumber % changeInterval == 0)
                 {
                     hiddenNumber = rand.Next(minNumber, maxNumber + 1);
-                    changeInterval = rand.Next(6, 9); // New interval.
                     Console.WriteLine(translator.Get("number_changed"));
                 }
             }
