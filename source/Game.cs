@@ -82,21 +82,23 @@ namespace GuessTheNumber2
 
             string input = (Console.ReadLine() ?? "").Trim();
 
+            GameMode? gameMode = null;
+
             if (input == "1")
             {
-                StandardGameMode gameMode = new StandardGameMode(translator, settings, hallOfFame, hallOfFameScreen);
-                gameMode.Play();
+                gameMode = new StandardGameMode(translator, settings, hallOfFame, hallOfFameScreen);
             }
             else if (input == "2")
             {
-                NewGamePlusMode gameMode = new NewGamePlusMode(translator, hallOfFame, hallOfFameScreen);
-                gameMode.Play();
+                gameMode = new NewGamePlusMode(translator, hallOfFame, hallOfFameScreen);
             }
             else
             {
                 Console.WriteLine(translator.Get("invalid_choice"));
                 System.Threading.Thread.Sleep(1000);
+                return;
             }
+            gameMode.Play();
         }
     }
 }
