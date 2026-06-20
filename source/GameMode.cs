@@ -1,13 +1,9 @@
 namespace GuessTheNumber2
 {
-    // Klasa abstrakcyjna - nie da się stworzyć obiektu "new GameMode()" wprost,
-    // można tylko dziedziczyć po niej i nadpisywać metodę Play().
-    // To jest abstrakcja: definiujemy WSPÓLNY interfejs dla trybów gry,
-    // a szczegóły implementacji zostawiamy klasom potomnym.
+    
     abstract class GameMode
     {
-        // protected = dziedziczące klasy mają dostęp, ale reszta programu już nie.
-        // To dalej jest enkapsulacja, tylko na poziomie hierarchii klas.
+        
         protected Translator translator;
         protected HallOfFame hallOfFame;
         protected HallOfFameScreen hallOfFameScreen;
@@ -23,16 +19,10 @@ namespace GuessTheNumber2
             this.hallOfFameScreen = hallOfFameScreen;
         }
 
-        // Metoda abstrakcyjna - nie ma ciała, każda klasa potomna MUSI
-        // ją zaimplementować po swojemu. To właśnie umożliwia polimorfizm:
-        // w Game.cs możemy trzymać zmienną typu GameMode i wywołać Play(),
-        // a program sam wybierze odpowiednią wersję w zależności od typu obiektu.
+       
         public abstract void Play();
 
-        // Metoda wspólna dla obu trybów - wybór poziomu trudności wyglądał
-        // identycznie w StandardGameMode i NewGamePlusMode, więc przenosimy
-        // ją tutaj raz, żeby nie powtarzać kodu (DRY).
-        // Zwraca false jeśli użytkownik wybrał coś złego.
+        
         protected bool ChooseDifficulty()
         {
             Console.WriteLine(translator.Get("choose_difficulty"));
@@ -72,8 +62,7 @@ namespace GuessTheNumber2
             }
         }
 
-        // Wspólna logika zapisu wyniku do Hall of Fame - też się powtarzała
-        // w obu klasach, więc trafia do rodzica.
+       
         protected void SaveResult(int attemptNumber, int time, bool isNewGamePlus)
         {
             Console.WriteLine(string.Format(translator.Get("success"), attemptNumber, time));
